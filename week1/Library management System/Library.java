@@ -6,13 +6,13 @@ public class Library {
     public void addBook(Book book) {
         for (Book b : books) {
             if (b.getId() == book.getId()) {
-                System.out.println("Book ID already exists!");
+                System.out.println("Book ID already exists");
                 return;
             }
         }
 
         books.add(book);
-        System.out.println("Book added successfully!");
+        System.out.println("Book added successfully");
     }
 
     public void viewBooks() {
@@ -44,7 +44,7 @@ public class Library {
                     System.out.println("Book is already issued.");
                 } else {
                     book.issueBook();
-                    System.out.println("Book issued successfully!");
+                    System.out.println("Book issued successfully");
                 }
                 return;
             }
@@ -58,7 +58,7 @@ public class Library {
             if (book.getId() == id) {
                 if (book.isIssued()) {
                     book.returnBook();
-                    System.out.println("Book returned successfully!");
+                    System.out.println("Book returned successfully");
                 } else {
                     System.out.println("Book was not issued.");
                 }
@@ -76,7 +76,7 @@ public class Library {
                     System.out.println("Return the book before removing it.");
                 } else {
                     books.remove(book);
-                    System.out.println("Book removed successfully!");
+                    System.out.println("Book removed successfully");
                 }
                 return;
             }
